@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pokedex</title>
+		<link rel="shortcut icon" href="Pokeball.ico" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="pokedex.css" />
+	</head>
+	<body>
+		<h1 class="title">Pokedex</h1>
+		<main class="main">
+			<section class="main-section">
+				<div class="buttons">
+					<button alt="Look for pokemon" id="open" /><span>ADD POKEMON</span></button>
+					<button alt="Delete pokemon" id="clearPokemon" /><span>DELETE POKEMON</span></button>
+				</di>
+			</section>
+      <section class="popUp">
+        <div class="modal-container" id="modal_container">
+          <div class="modal">
+            <h1>Add a new Pokemon</h1>
+            <input
+					type="text"
+					name=""
+					id="pokemonName"
+					placeholder="Pokemon name or ID"
+				/>
+            <div class="modalbtn">
+            <button id="searchPokemon">submit</button>
+            <button id="close">close</button>
+          </div>
+          </div>
+      </section>
+			<section class="pokemonData" id="card"></section>
+		</main>
+		<script src="pokedex.js"></script>
+	</body>
+</html>
